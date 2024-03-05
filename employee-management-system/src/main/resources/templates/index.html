@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="https://www.thymeleaf.org/">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>vinoth vk</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container-fluid" align="center">
+		<h3>Employee List</h3>
+		<a th:href="@{/add}" class="btn btn-success" role="button">
+			Add Employee</a>
+			
+		<a th:href="@{/delete}" class="btn btn-success" role="button">
+			Delete All Employee</a>
+			<br><br>
+
+		<table style="width: 80%;" border="1" 
+		class="table table-striped table-hover">
+			<thead>
+				<tr class="table table-striped table-hover">										
+					<th>ID</th>
+					<th>Name</th>
+					<th>Designation</th>
+					<th>Address</th>
+					<th>PhoneNo</th>
+					<th>Update</th>
+					<th>Delete</th>
+				</trclass="table table-striped table-hover">
+			</thead>
+			<tbody>
+				<tr th:each="employee:${allemplist}" class="table table-striped table-hover">					
+					<td th:text="${employee.getId}"></td>
+					<td th:text="${employee.getName}"></td>
+					<td th:text="${employee.getDesignation}"></td>
+					<td th:text="${employee.getAddress}"></td>
+					<td th:text="${employee.getPhone}"></td>
+					<td><a th:href="@{/updateform/{id}(id=${employee.id})}"
+					class="btn btn-outline-success" role="button">Update</a></td>
+					<td><a th:href="@{/delete/{id}(id=${employee.id})}"
+					class="btn btn-outline-danger" role="button">Delete</a></td>
+				</tr>
+			</tbody>
+
+		</table>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="17.0.7" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="com.employee.model.Employee">
+    <void property="address">
+     <string>SNKL</string>
+    </void>
+    <void property="designation">
+     <string>DATA SCIENTIST</string>
+    </void>
+    <void property="id">
+     <long>22</long>
+    </void>
+    <void property="name">
+     <string>VINOTHKUMAR</string>
+    </void>
+    <void property="phone">
+     <long>8300452379</long>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="com.employee.model.Employee">
+    <void property="address">
+     <string>PERASANDRA</string>
+    </void>
+    <void property="designation">
+     <string>HR</string>
+    </void>
+    <void property="id">
+     <long>23</long>
+    </void>
+    <void property="name">
+     <string>BHOOMIKA</string>
+    </void>
+    <void property="phone">
+     <long>9845672367</long>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="com.employee.model.Employee">
+    <void property="address">
+     <string>ERODE</string>
+    </void>
+    <void property="designation">
+     <string>TESTER</string>
+    </void>
+    <void property="id">
+     <long>24</long>
+    </void>
+    <void property="name">
+     <string>MANOJ</string>
+    </void>
+    <void property="phone">
+     <long>8438237297</long>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="com.employee.model.Employee">
+    <void property="address">
+     <string>SILK BOARD</string>
+    </void>
+    <void property="designation">
+     <string>DESIGNER</string>
+    </void>
+    <void property="id">
+     <long>25</long>
+    </void>
+    <void property="name">
+     <string>KRISHNA</string>
+    </void>
+    <void property="phone">
+     <long>8940567856</long>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="com.employee.model.Employee">
+    <void property="address">
+     <string>MADIWALA</string>
+    </void>
+    <void property="designation">
+     <string>DEVOPS</string>
+    </void>
+    <void property="id">
+     <long>26</long>
+    </void>
+    <void property="name">
+     <string>ASIF</string>
+    </void>
+    <void property="phone">
+     <long>8433904708</long>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="com.employee.model.Employee">
+    <void property="address">
+     <string>ADUGODI</string>
+    </void>
+    <void property="designation">
+     <string>DEVELOPER</string>
+    </void>
+    <void property="id">
+     <long>27</long>
+    </void>
+    <void property="name">
+     <string>SARAVANAN</string>
+    </void>
+    <void property="phone">
+     <long>9978781486</long>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="https://www.thymeleaf.org/">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>vk-AddEmployee</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container-fluid" align="center">
+		<h1>Employee Management System</h1>
+		<h3>Update Employee</h3>
+		<form action="#" th:action="@{/save}" th:object="${employee}" method="POST">
+			<div class="mb-3">
+				<label  class="form-label">Employee Id</label>
+				<input type="text" class="form-control" th:field="*{id}" disabled>
+			</div>
+			<div class="mb-3">
+				<label  class="form-label">Employee Name</label>
+				<input type="text" class="form-control" th:field="*{name}" placeholder="Enter your Name">
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Designation</label>
+				<input type="text" class="form-control" th:field="*{designation}" placeholder="Enter your Designation">
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Mobile Number</label>
+				<input type="text" class="form-control" th:field="*{phone}" placeholder="Enter your Mobile Number">
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Address</label>
+				<input type="text" class="form-control" th:field="*{address}" placeholder="Enter your Address">
+			</div>
+			<input class="btn btn-primary" type="submit" value="Update">
+		</form>
+		<a th:href="@{/}">Back To List</a>
+	</div>
+</body>
+
+</html>
